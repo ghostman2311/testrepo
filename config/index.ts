@@ -7,7 +7,7 @@ export const getEnv = (key: string) => {
 export default {
   rootElementId: "__next",
   title: {
-    text: "Clarence Siew",
+    text: "Nikhil Karnwal",
     divider: "|"
   },
   version: "6.4.0",

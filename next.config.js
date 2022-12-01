@@ -19,7 +19,6 @@ module.exports = {
   },
   env: {
     OMDB_API_KEY: getEnv("OMDB_API_KEY"),
-
     DEBUG_MODE: getEnv("DEBUG_MODE", true),
   },
 };

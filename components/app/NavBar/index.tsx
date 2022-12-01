@@ -14,7 +14,8 @@ const NavBar = ({ pages }: { pages: PageRoute[] }) => {
   const [showNavMenu, setShowNavMenu] = useState<boolean>(false);
 
   const reconfigureNavLayout = (ev?: UIEvent) => {
-    const rootElWidth = document.getElementById(config.rootElementId)?.clientWidth || 0;
+    const rootElWidth =
+      document.getElementById(config.rootElementId)?.clientWidth || 0;
     if (rootElWidth >= 900) {
       setShowNavMenu(true);
       setShowNavToggle(false);
@@ -45,51 +46,50 @@ const NavBar = ({ pages }: { pages: PageRoute[] }) => {
     <header>
       <span className="titleAndMenuToggle">
         <h1 onClick={closeNavMenu}>
-          <Link href="/">
-            Clarence Siew
-          </Link>
+          <Link href="/">Nikhil Karnwal</Link>
         </h1>
-        {
-          showNavToggle
-            ? (
-              <Button className="navMenuToggle" onClick={() => setShowNavMenu(!showNavMenu)}>
-                {
-                  showNavMenu
-                    ? <MdClose />
-                    : <MdMenu />
-                }
-              </Button>
-            )
-            : <></>
-        }
+        {showNavToggle ? (
+          <Button
+            className="navMenuToggle"
+            onClick={() => setShowNavMenu(!showNavMenu)}
+          >
+            {showNavMenu ? <MdClose /> : <MdMenu />}
+          </Button>
+        ) : (
+          <></>
+        )}
       </span>
-      {
-        showNavMenu
-          ? (
-            <nav ref={navMenuRef}>
-              {
-                pages
-                  .filter((page) => !page.hideFromNavBar)
-                  .map((page) => (
-                    <Link
-                      key={page.path.replace("/", "nav-link-")}
-                      className={["navLink", router.pathname === page.path ? "active" : ""].join(" ")}
-                      href={page.path}
-                      onClick={closeNavMenu}>
-                      {page.title}
-                    </Link>
-                  ))
-              }
-              <a href="https://www.linkedin.com/in/clarencesiew/" target="_blank" rel="noreferrer">
-                LinkedIn
-              </a>
-              <a href="https://github.com/csiew" target="_blank" rel="noreferrer">
-                GitHub
-              </a>
-            </nav>
-          )
-          : <></>
-      }
+      {showNavMenu ? (
+        <nav ref={navMenuRef}>
+          {pages
+            .filter((page) => !page.hideFromNavBar)
+            .map((page) => (
+              <Link
+                key={page.path.replace("/", "nav-link-")}
+                className={[
+                  "navLink",
+                  router.pathname === page.path ? "active" : "",
+                ].join(" ")}
+                href={page.path}
+                onClick={closeNavMenu}
+              >
+                {page.title}
+              </Link>
+            ))}
+          <a
+            href="https://www.linkedin.com/in/clarencesiew/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            LinkedIn
+          </a>
+          <a href="https://github.com/csiew" target="_blank" rel="noreferrer">
+            GitHub
+          </a>
+        </nav>
+      ) : (
+        <></>
+      )}
     </header>
   );
 };
