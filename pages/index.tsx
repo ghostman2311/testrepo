@@ -69,19 +69,11 @@ const Home = () => {
                 >
                   LinkedIn
                 </a>
-                . You can also find me on{" "}
-                <a
-                  href="https://twitter.com/nkarnwal07"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Twitter
-                </a>
-                , though I never post there.
+                .
               </p>
               <p>
                 You could also email me at{" "}
-                <code>nkarnwal07 (at) gmail (dot) com</code>.
+                <code>nehanegi071097 (at) gmail (dot) com</code>.
               </p>
             </section>
             {config.features.contactForm ? (
