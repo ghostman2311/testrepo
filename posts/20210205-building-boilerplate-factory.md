@@ -1,7 +1,7 @@
 ---
 title: Building a boilerplate factory
 subtitle: An experiment in boilerplates and templates
-author: Nikhil Karnwal
+author: Neha Negi
 publishedOn: 2021-02-05T14:58:08
 layout: post
 ---

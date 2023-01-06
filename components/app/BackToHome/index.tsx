@@ -4,7 +4,7 @@ const BackToHome = () => {
   return (
     <div className="backToHome">
       <a href="/">
-        <img src="profile.png" />
+        <img src="profile1.png" />
       </a>
     </div>
   );

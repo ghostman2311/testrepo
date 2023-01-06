@@ -46,7 +46,7 @@ const NavBar = ({ pages }: { pages: PageRoute[] }) => {
     <header>
       <span className="titleAndMenuToggle">
         <h1 onClick={closeNavMenu}>
-          <Link href="/">Nikhil Karnwal</Link>
+          <Link href="/">Neha Negi</Link>
         </h1>
         {showNavToggle ? (
           <Button

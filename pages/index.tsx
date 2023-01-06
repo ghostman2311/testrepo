@@ -21,7 +21,7 @@ const Home = () => {
           <article className="topLevelPage pageHome">
             <section>
               <p>
-                Hi, I&apos;m <b>Nikhil Karnwal</b>.
+                Hi, I&apos;m <b>Neha Negi</b>.
               </p>
               <p>
                 I&apos;m a full-stack software engineer based in India. I love
@@ -63,7 +63,7 @@ const Home = () => {
                 </a>{" "}
                 and{" "}
                 <a
-                  href="https://www.linkedin.com/in/nikhil-karnwal-925185229/"
+                  href="https://www.linkedin.com/in/neha-negi-0533b4211/"
                   target="_blank"
                   rel="noreferrer"
                 >

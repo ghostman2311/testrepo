@@ -15,7 +15,7 @@ const AppContainer = ({ Component, pageProps }: any) => {
           <></>
         )}
         <link rel="shortcut icon" href="/profile.png" />
-        <title> Nikhil Karnwal</title>
+        <title> Neha Negi</title>
       </Head>
       <BackToHome />
       <main>
