@@ -55,7 +55,7 @@ const Home = () => {
               <p>
                 You can find me on{" "}
                 <a
-                  href="https://github.com/ghostman2311"
+                  href="https://github.com/nehanegi-07"
                   target="_blank"
                   rel="noreferrer"
                 >

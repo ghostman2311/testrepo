@@ -3,7 +3,7 @@ import retitle from "../../lib/retitle";
 
 const ProjectDetail = () => {
   const project = {
-    title: "Youdera",
+    title: "Test",
   };
   return (
     <Head>

@@ -16,4 +16,4 @@ It works great for my standard Express backend project setup. However I plan on 
 
 I'm also figuring out a frontend or interface to conveniently toggle various options in a single _view_ rather than fiddling with flags and command line parameters. An `ncurses` text user interface was my initial choice, but I'm currently experimenting with an Electron app that would call the script and plug in the necessary flags.
 
-You can take a look at the initial script on [GitHub](https://github.com/csiew/boilerplate_generators). The script is currently designed for use on Debian-based Linux distributions. Support for macOS (and maybe Windows) will come a little later.
+You can take a look at the initial script on [GitHub](https://github.com/nehanegi-07). The script is currently designed for use on Debian-based Linux distributions. Support for macOS (and maybe Windows) will come a little later.

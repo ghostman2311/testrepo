@@ -83,7 +83,7 @@ const NavBar = ({ pages }: { pages: PageRoute[] }) => {
           >
             LinkedIn
           </a>
-          <a href="https://github.com/csiew" target="_blank" rel="noreferrer">
+          <a href="https://github.com/nehanegi-07" target="_blank" rel="noreferrer">
             GitHub
           </a>
         </nav>
